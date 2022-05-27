@@ -27,7 +27,7 @@ for(let i=0; i<5; i++){
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" onclick="erase(this);" data-bs-dismiss="modal" class="btn btn-primary">OK</button>
+                    <button type="button" onclick="erase();" data-bs-dismiss="modal" class="btn btn-primary">OK</button>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@ for(let i=0; i<5; i++){
     
 }
 
-function erase(element){
+function erase(){
    var child = document.getElementById('yourid');
     parent.removeChild(child);
     //child.parentNode.removeChild(child);
